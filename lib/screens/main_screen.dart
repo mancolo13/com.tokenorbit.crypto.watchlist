@@ -23,10 +23,26 @@ class _MainScreenState extends State<MainScreen> {
         selectedIndex: _idx,
         onDestinationSelected: (i) => setState(() => _idx = i),
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.grid_on_outlined), selectedIcon: Icon(Icons.grid_on), label: 'Watchlist'),
-          NavigationDestination(icon: Icon(Icons.account_balance_outlined), selectedIcon: Icon(Icons.account_balance), label: 'DeFiYield'),
-          NavigationDestination(icon: Icon(Icons.local_gas_station_outlined), selectedIcon: Icon(Icons.local_gas_station), label: 'GasWatch'),
-          NavigationDestination(icon: Icon(Icons.shield_outlined), selectedIcon: Icon(Icons.shield), label: 'Ledger'),
+          NavigationDestination(
+            icon: Icon(Icons.candlestick_chart_outlined),
+            selectedIcon: Icon(Icons.candlestick_chart),
+            label: 'Screener',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.pie_chart_outline),
+            selectedIcon: Icon(Icons.pie_chart),
+            label: 'Portfolio',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.speed_outlined),
+            selectedIcon: Icon(Icons.speed),
+            label: 'Gas & Sentiment',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.notifications_none_outlined),
+            selectedIcon: Icon(Icons.notifications),
+            label: 'Alerts',
+          ),
         ],
       ),
     );
